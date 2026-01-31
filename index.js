@@ -827,7 +827,7 @@ function zipFiles(sourceDir, outPath, filesToZip) {
                 from: `"DTC Reporter" <${EMAIL_USER}>`,
                 to: EMAIL_TO,
                 subject: `รายงานสรุปพฤติกรรมการขับขี่ (กะกลางคืน 18:00 - 06:00) - ${yesterdayStr}`,
-                text: `เรียน ผู้เกี่ยวข้อง\n\nระบบส่งรายงานประจำกะกลางคืน (18:00 - 06:00)\nช่วงเวลา: ${yesterdayStr} 18:00 ถึง ${todayStr} 06:00\n\nสิ่งที่แนบมาด้วย:\n1. ไฟล์ข้อมูลดิบ CSV (อยู่ใน Zip)\n2. ไฟล์ PDF สรุปภาพรวม\n\nขอบคุณครับ\nDTC Automation Bot`,
+                text: `เรียน ผู้เกี่ยวข้อง\n\nระบบส่งรายงานประจำกะกลางคืน (18:00 - 06:00)\nช่วงเวลา: ${yesterdayStr} 18:00 ถึง ${todayStr} 06:00\n\nสิ่งที่แนบมาด้วย:\n1. ไฟล์ข้อมูลดิบ CSV (อยู่ใน Zip)\n2. ไฟล์ PDF สรุปภาพรวม\n\nด้วยความนับถือ\nDTC Automation Bot`,
                 attachments: attachments
             });
             console.log(`   ✅ Email Sent Successfully!`);
