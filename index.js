@@ -289,7 +289,7 @@ function zipFiles(sourceDir, outPath, filesToZip) {
         await page.type('#txtpass', DTC_PASSWORD);
         await Promise.all([
             page.evaluate(() => document.getElementById('btnLogin').click()),
-            page.waitForFunction(() => !document.querySelector('#txtname'), { timeout: 60000 })
+            page.waitForFunction(() => !document.querySelector('#txtname'), { timeout: 90000 })
         ]);
         console.log('✅ Login Success');
 
